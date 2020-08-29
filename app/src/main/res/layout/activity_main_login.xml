@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@color/colorPrimaryDark"
+    tools:context=".MainLogin">
+
+    <ImageView
+        android:layout_width="248dp"
+        android:layout_height="217dp"
+        android:background="@drawable/logo"/>
+
+    <EditText
+        android:id="@+id/mail"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:hint="Correo"
+        android:inputType="textEmailAddress"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF" />
+
+    <EditText
+
+        android:id="@+id/pass"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:hint="Contraseña"
+        android:inputType="textPassword"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/reg"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/reg1" />
+
+        <Button
+            android:id="@+id/login"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/btn_chk" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

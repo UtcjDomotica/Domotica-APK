@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@color/colorPrimaryDark"
+    tools:context=".MainRegistro">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="60dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="113dp"
+            android:layout_height="101dp"
+            android:layout_marginRight="10dp"
+            app:srcCompat="@drawable/logo" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="Registro"
+            android:textColor="#FFFFFF"
+            android:textSize="25dp" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/nom"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:hint="Nombres"
+        android:inputType="text"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF" />
+
+    <EditText
+        android:id="@+id/ape"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:hint="Apellidos"
+        android:inputType="text"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF" />
+
+    <EditText
+        android:id="@+id/mail"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:hint="Correo"
+        android:inputType="textEmailAddress"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF" />
+
+
+
+    <EditText
+        android:id="@+id/pass"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:hint="Contraseña"
+        android:inputType="textPassword"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF" />
+
+    <Button
+        android:id="@+id/registro"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/btn_chk" />
+</LinearLayout>

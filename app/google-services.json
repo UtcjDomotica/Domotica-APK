@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "641992615416",
+    "firebase_url": "https://domotica-8864c.firebaseio.com",
+    "project_id": "domotica-8864c",
+    "storage_bucket": "domotica-8864c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:641992615416:android:5c334c66cae200674f620d",
+        "android_client_info": {
+          "package_name": "com.UTCJ.domotica"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "641992615416-tsfp2u2ao5dl8jsa8bp11tu5cuo90i0m.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBBqGRrTvRBCAtNoduJKKMXZYLd2uGtcVg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "641992615416-tsfp2u2ao5dl8jsa8bp11tu5cuo90i0m.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
