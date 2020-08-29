@@ -1,8 +1,6 @@
 package com.UTCJ.domotica.ui.share;
 
-import android.net.Uri;
 import android.os.Bundle;
-import android.os.Environment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -18,8 +16,6 @@ import androidx.lifecycle.ViewModelProviders;
 
 import com.UTCJ.domotica.R;
 
-import java.io.File;
-
 public class ShareFragment extends Fragment {
 
     private ShareViewModel shareViewModel;
@@ -29,15 +25,11 @@ public class ShareFragment extends Fragment {
         shareViewModel =
                 ViewModelProviders.of(this).get(ShareViewModel.class);
         View root = inflater.inflate(R.layout.fragment_share, container, false);
-       WebView webview = (WebView) root.findViewById(R.id.web);
-        webview.getSettings().setJavaScriptEnabled(true);
-      //  webview.getSettings().setPluginsEnabled(true);
-        webview.getSettings().setAllowFileAccess(true);
-        File file = new File(Environment.getExternalStorageDirectory() + "/test.pdf");
+        WebView webView = (WebView) root.findViewById(R.id.web);
+        WebSettings webSettings = webView.getSettings();
+        webSettings.setJavaScriptEnabled(true);
 
-        final Uri uri = Uri.fromFile(file);
-
-        webview.loadUrl(uri.toString());
+        webView.loadUrl("https://drive.google.com/file/d/1NGTkBSSsCDknB8khJh8G8Mz-tQc39l1z/view");
 
         return root;
     }
